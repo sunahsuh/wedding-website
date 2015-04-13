@@ -176,9 +176,9 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    font-family: "Covered By Your Grace","Helvetica Neue",Helvetica,Arial,cursive;
     color: #{{ site.color.primary }};
-    text-shadow: 1px 1px 1px #666;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
 }
 
 .navbar-default .navbar-brand:hover,
@@ -243,7 +243,7 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default .navbar-brand {
-        font-size: 2em;
+        font-size: 2.2em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
@@ -270,7 +270,8 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
+        font-size: 1.7em;
+        text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
     }
 }
 
