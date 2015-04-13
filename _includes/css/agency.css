@@ -172,12 +172,13 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default {
     border-color: transparent;
-    background-color: #222;
+    background-color: #333;
 }
 
 .navbar-default .navbar-brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
     color: #{{ site.color.primary }};
+    text-shadow: 1px 1px 1px #666;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -254,7 +255,18 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #222;
+        background-color: #666;
+        /*
+        background-attachment: fixed;
+        background-image: url(../img/header.jpg);
+        background-position: center center;
+        background-repeat: repeat-y;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        box-shadow: inset 0 0 1em #111;
+        */
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -266,7 +278,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/header-bg.jpg);
+    background-image: url(../img/header.jpg);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -278,6 +290,7 @@ header {
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
+    text-shadow: 1px 1px 1px #000;
 }
 
 header .intro-text .intro-lead-in {
@@ -345,6 +358,47 @@ section h3.section-subheading {
         padding: 150px 0;
     }
 }
+
+#accommodations {
+    background-attachment: scroll;
+    background-image: url(../img/chicago.jpg);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#accommodations .text-muted {
+    color: #666;
+    text-shadow: 1px 1px 1px #ccc;
+}
+    
+
+#event {
+    background-attachment: scroll;
+    background-image: url(../img/lillstreet.jpg);
+    background-position: -600px center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+@media(min-width:768px) {
+    #event {
+        background-position: -300px center;
+    }
+}
+
+#event .text-muted {
+    color: #333;
+    text-shadow: 1px 1px 1px #ccc;
+  }
+
+
 
 .service-heading {
     margin: 15px 0;
@@ -498,9 +552,9 @@ section h3.section-subheading {
     background-color: #{{ site.color.primary }};
 }
 
-.timeline>li .timeline-image h4 {
-    margin-top: 12px;
-    font-size: 10px;
+.timeline>li .timeline-image h5 {
+    margin-top: 7px;
+    font-size: 9px;
     line-height: 14px;
 }
 
@@ -566,10 +620,10 @@ section h3.section-subheading {
         margin-left: -50px;
     }
 
-    .timeline>li .timeline-image h4 {
-        margin-top: 16px;
-        font-size: 13px;
-        line-height: 18px;
+    .timeline>li .timeline-image h5 {
+        margin-top: 15px;
+        font-size: 12px;
+        line-height: 15px;
     }
 
     .timeline>li.timeline-inverted>.timeline-panel {
@@ -594,8 +648,8 @@ section h3.section-subheading {
         margin-left: -75px;
     }
 
-    .timeline>li .timeline-image h4 {
-        margin-top: 30px;
+    .timeline>li .timeline-image h5 {
+        margin-top: 20px;
         font-size: 18px;
         line-height: 26px;
     }
@@ -620,8 +674,8 @@ section h3.section-subheading {
         margin-left: -85px;
     }
 
-    .timeline>li .timeline-image h4 {
-        margin-top: 40px;
+    .timeline>li .timeline-image h5 {
+        margin-top: 30px;
     }
 
     .timeline>li.timeline-inverted>.timeline-panel {
@@ -637,6 +691,7 @@ section h3.section-subheading {
 .team-member img {
     margin: 0 auto;
     border: 7px solid #fff;
+    background-color: #ccc;
 }
 
 .team-member h4 {
@@ -720,7 +775,7 @@ section#contact .text-danger {
 
 footer {
     padding: 25px 0;
-    text-align: center;
+    text-align: left;
 }
 
 footer span.copyright {

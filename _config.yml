@@ -8,9 +8,27 @@ description: "Sunah and Laura's wedding website."
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: fed136
-  secondary: fec503  
+  primary: 5c00b3
+  secondary: 3f007a
   secondary-dark: 333
+
+# NGOs for our "registry"
+orgs:
+- name: Jane Addams Resource Corporation
+  description: "For more than 20 years, JARC has worked to ensure that people who work do not live in poverty by providing job training and financial education to low-income adults and teaching community residents to read and use computers."
+  link: http://www.jane-addams.org/support-us/donate/
+  pic: jarc_logo
+
+- name: Project Fierce Chicago
+  description: "Project Fierce’s mission is to reduce LGBTQ youth homelessness in Chicago by providing transitional housing and support services to homeless LGBTQ young adults."
+  link: http://projectfiercechicago.org/donate-now/
+  pic: projectfiercelogo
+
+- name: Ada Initiative
+  description: "The Ada Initiative supports women in open technology and culture through activities such as producing codes of conduct and anti-harassment policies, advocating for gender diversity, teaching ally skills, and hosting conferences for women in open tech/culture."
+  link: https://adainitiative.org/donate/
+  pic: avatar-adainitiative1
+
 
 # Build settings
 markdown: kramdown
